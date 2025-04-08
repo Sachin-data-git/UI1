@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        section{
+            height: 600px;
+            border: 1px solid red;
+            /* display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly; */
+            display: grid;
+            grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+            grid-template-rows: 200px 200px;
+            justify-content: space-evenly;
+           /* row-gap: 10px;
+           column-gap: 10px; */
+           gap: 10px;
+        }
+        div{
+            /* height: 100px; */
+            /* width: 100px; */
+            border: 1px solid green;
+        }
+        #item1{
+         /* grid-column-start: 4;
+         grid-column-end: -1; */
+         /* grid-row-start: 1;
+         grid-row-end: 2; */
+         /* grid-row:1/2 ; */
+         /* grid-column:4/-1 ; */
+         /* rs/cs/re/ce */
+         /* grid-area:1/4/2/-1;  */
+
+        }
+        #item2{
+         grid-column-start: 4;
+         grid-column-end: 5;
+       
+
+        }
+    </style>
+</head>
+<body>
+       <section>
+        <div id="item1" data-aos="zoom-out">1</div>
+        <div id="item2">2</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+       </section>
+
+       <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+       <script>
+        // AOS.init();
+
+
+
+        "use strict"
+        // x=5
+        console.log(x);
+        var x=5;
+
+      </script>
+</body>
+</html>
